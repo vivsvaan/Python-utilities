@@ -5,14 +5,11 @@
 # in __init__, self.rev = InsensitiveDict()
 
 
-class TwoWayDict:
+class ReverseDict(dict):
     def __init__(self, mappings):
         self.rev = {}
         for key, val in mappings.items():
             self[key] = val
             self.rev[val] = key
     
- 
 
-        
-        
