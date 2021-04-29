@@ -44,4 +44,21 @@ class ReverseDict(dict):
         return two_way_dict
     
  
+normal_dict = ReverseDict({'a':'b', 'c':'d'})
+print("Normal Dict is: ", normal_dict)
+
+reverse_dict = normal_dict.get_reverse_dict()
+print("Reversed Dict is: ", reverse_dict)
+
+two_way_dict = normal_dict.get_two_way_dict()
+print("Two-way Dict is: ", two_way_dict)
+
+
+"""
+Output
+Normal Dict is:  {'a': 'b', 'c': 'd'}
+Reversed Dict is:  {'b': 'a', 'd': 'c'}
+Two-way Dict is:  {'a': 'b', 'c': 'd', 'b': 'a', 'd': 'c'}
+"""
+
 
