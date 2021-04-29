@@ -33,4 +33,15 @@ class ReverseDict(dict):
         """
         return self.rev
     
+    def get_two_way_dict(self):
+        """
+        Returns the two-way dictionary by appending
+        the normal dictionary with reversed dictionary
+        """
+        two_way_dict = {}
+        two_way_dict.update(self)
+        two_way_dict.update(self.rev)
+        return two_way_dict
     
+ 
+
