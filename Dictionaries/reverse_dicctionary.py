@@ -1,4 +1,4 @@
-# two_way_dict.py
+# reverse_dictionary.py
 
 # can inherit from [InsensitiveDict]()
 # class ReverseDict(InsensitiveDict):
@@ -28,6 +28,9 @@ class ReverseDict(dict):
             return self.rev.__getitem__(key)
     
     def get_reverse_dict(self):
+        """
+        Returns the reversed dictionary
+        """
         return self.rev
     
- 
+    
